@@ -19,6 +19,7 @@ function FullNameDisplay() {
           <input
             type="text"
             value={firstName}
+            pattern="[A-Za-z\s]+"
             onChange={(e) => setFirstName(e.target.value)}
             required
           />
@@ -28,6 +29,7 @@ function FullNameDisplay() {
           <input
             type="text"
             value={lastName}
+            pattern="[A-Za-z\s]+"
             onChange={(e) => setLastName(e.target.value)}
             required
           />
